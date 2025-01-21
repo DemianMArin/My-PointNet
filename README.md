@@ -1,2 +1,2 @@
 
-🤖 Trainig PointNet to detect RoboBoat2025 objects
+🤖 Training PointNet to detect RoboBoat2025 objects
