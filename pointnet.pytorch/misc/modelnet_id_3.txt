@@ -1,0 +1,3 @@
+airplane 0
+bookshelf 1
+cup 2

@@ -163,7 +163,7 @@ from plyfile import PlyData
 if __name__ == '__main__':
 
     # Path to your .ply file
-    ply_file = '/home/vanttec/PointNet/Convert2ply/test/range_hood/range_hood_0179.ply'
+    ply_file = '/home/vanttec/PointNet/Convert2ply/test/cup/cup_0097.ply'
 
     # Read the .ply file
     plydata = PlyData.read(ply_file)

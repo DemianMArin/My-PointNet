@@ -53,12 +53,12 @@ elif opt.dataset_type == 'modelnet40':
     dataset = ModelNetDataset(
         root=opt.dataset,
         npoints=opt.num_points,
-        split='trainval')
+        split='train3')
 
     test_dataset = ModelNetDataset(
         # root=opt.dataset,
         root='/home/vanttec/PointNet/Convert2ply/test/',
-        split='test',
+        split='test3',
         npoints=opt.num_points,
         data_augmentation=False)
 else:
@@ -130,7 +130,7 @@ for epoch in range(opt.nepoch):
             correct = pred_choice.eq(target.data).cpu().sum()
             print('[%d: %d/%d] %s loss: %f accuracy: %f' % (epoch, i, num_batch, blue('test'), loss.item(), correct.item()/float(opt.batchSize)))
 
-    torch.save(classifier.state_dict(), '%s/cls_model_%d.pth' % (opt.outf, epoch))
+    torch.save(classifier.state_dict(), '%s/cls_model_3%d.pth' % (opt.outf, epoch))
 
 total_correct = 0
 total_testset = 0
